@@ -1,0 +1,43 @@
+---
+title: "About the series"
+toc: false
+---
+
+::: {.hero}
+# About this series
+The Cornerstone Economics Working Paper Series is the public-facing research output of Cornerstone Economics. Papers are open access, DOI-indexed, and permanently archived.
+:::
+
+::: {.about-grid}
+
+::: {.about-card}
+### What we publish
+Original research on economic resilience, adaptive capacity, and small-state policy. Strong empirical anchoring. Theoretical frameworks (Complex Adaptive Systems, Dynamic Capabilities Theory, socio-metabolic risk) used as instruments where they earn their keep, not as branding.
+:::
+
+::: {.about-card}
+### Open and citable
+Each paper is licensed CC-BY 4.0 for text and MIT for analysis code. Each release is deposited at the Cornerstone Economics community on Zenodo, which mints a versioned DOI plus a stable concept DOI. Citation metadata is available in BibTeX, RIS, and CSL-JSON.
+:::
+
+::: {.about-card}
+### Reproducible
+Papers are written in Quarto and rendered from a single source to PDF and HTML. Data preparation and analysis code live in the paper's own repository, alongside the manuscript. Anyone can rebuild the paper from source.
+:::
+
+::: {.about-card}
+### Identifier scheme
+Papers are numbered `WP-YYYY-NN`, where `YYYY` is the year of first release and `NN` is the sequence within that year. Once a paper has a DOI, it remains the citation of record even if the paper is later revised.
+:::
+
+::: {.about-card}
+### Versioning
+Substantive revisions produce a new version with its own DOI. Minor corrections are issued as errata appended to the existing version, not as new releases. The concept DOI on Zenodo always resolves to the latest version.
+:::
+
+::: {.about-card}
+### Submissions and contact
+The series currently publishes work led by Cornerstone Economics and its named collaborators. Inquiries: [info@c-economics.com](mailto:info@c-economics.com).
+:::
+
+:::

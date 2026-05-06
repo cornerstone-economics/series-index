@@ -1,0 +1,61 @@
+---
+title: "Working papers"
+page-layout: full
+toc: false
+---
+
+::: {.hero}
+# Cornerstone Economics Working Papers
+
+Open-access research on resilience, adaptive capacity, and small-state economic policy. Each paper is archived on Zenodo and assigned a DOI.
+:::
+
+```{=html}
+<div class="paper-list" id="paper-list"></div>
+
+<script>
+fetch('papers.json')
+  .then(r => r.json())
+  .then(papers => {
+    const list = document.getElementById('paper-list');
+    papers.sort((a, b) => b.id.localeCompare(a.id));
+    papers.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'paper-card';
+      const doiPart = p.doi
+        ? `<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI</a>`
+        : `<span class="meta-tag muted">DOI pending</span>`;
+      const pdfPart = p.pdf
+        ? `<a href="${p.pdf}" target="_blank" rel="noopener">PDF</a>`
+        : `<span class="meta-tag muted">PDF pending</span>`;
+      const repoPart = p.repo
+        ? `<a href="${p.repo}" target="_blank" rel="noopener">Source</a>`
+        : '';
+      const citePart = p.doi
+        ? `<a href="https://citation.crosscite.org/?doi=${p.doi}" target="_blank" rel="noopener">Cite</a>`
+        : '';
+      card.innerHTML = `
+        <div class="paper-number">${p.id} &middot; ${p.date}</div>
+        <h2 class="paper-title">${p.title}</h2>
+        <div class="paper-authors">${p.authors.join(', ')}</div>
+        <p class="paper-abstract">${p.abstract}</p>
+        <div class="paper-meta">
+          ${pdfPart}
+          ${doiPart}
+          ${repoPart}
+          ${citePart}
+          <span class="meta-tag muted">${p.jel ? 'JEL ' + p.jel.join(', ') : ''}</span>
+        </div>
+      `;
+      list.appendChild(card);
+    });
+    if (papers.length === 0) {
+      list.innerHTML = '<p style="text-align:center;color:#666;">No papers published yet. The first paper is in production.</p>';
+    }
+  })
+  .catch(() => {
+    document.getElementById('paper-list').innerHTML =
+      '<p style="text-align:center;color:#666;">Paper list could not be loaded.</p>';
+  });
+</script>
+```

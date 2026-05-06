@@ -1,0 +1,14 @@
+[
+  {
+    "id": "WP-2026-01",
+    "date": "May 2026",
+    "title": "Curaçao at the World Cup: what the FIFA ranking does not measure",
+    "authors": ["Rendell de Kort"],
+    "abstract": "Curaçao qualified for the 2026 World Cup at FIFA rank 82. The ranking system rewards frequency of matches against high-ranked opponents, which structurally disadvantages small states with thin domestic competitions and short qualifying windows. The paper formalises the diaspora effect on national-team performance and shows that for small states with large diasporas the FIFA ranking systematically understates available quality.",
+    "jel": ["F22", "Z22", "O15"],
+    "doi": null,
+    "pdf": null,
+    "repo": "https://github.com/cornerstone-economics/wp-2026-01-worldcup",
+    "status": "in production"
+  }
+]

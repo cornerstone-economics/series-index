@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "CNAME"
+
+website:
+  title: "Cornerstone Economics Working Papers"
+  description: "Working paper series of Cornerstone Economics. Open access, DOI-indexed, archived on Zenodo."
+  site-url: "https://papers.c-economics.com"
+  open-graph: true
+  twitter-card: true
+  reader-mode: false
+  page-navigation: false
+  back-to-top-navigation: true
+  navbar:
+    background: "#4A7A9A"
+    foreground: "#ffffff"
+    logo: "/assets/ce-logo.png"
+    logo-alt: "Cornerstone Economics"
+    title: false
+    left:
+      - text: "Papers"
+        href: index.qmd
+      - text: "About the series"
+        href: about.qmd
+      - text: "How to cite"
+        href: how-to-cite.qmd
+    right:
+      - icon: github
+        href: https://github.com/cornerstone-economics
+        aria-label: GitHub organization
+      - text: "c-economics.com"
+        href: https://www.c-economics.com
+  page-footer:
+    background: "#091F38"
+    foreground: "#ffffff"
+    left: |
+      Cornerstone Economics, Aruba.<br/>
+      Building resilience, transforming society.
+    center: |
+      Working papers archived at [Zenodo](https://zenodo.org/communities/cornerstone-economics).
+    right: |
+      &copy; 2026 Cornerstone Economics.<br/>
+      Text under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    css: styles.css
+
+execute:
+  freeze: auto

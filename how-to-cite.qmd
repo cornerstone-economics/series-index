@@ -1,0 +1,23 @@
+---
+title: "How to cite"
+toc: false
+---
+
+::: {.hero}
+# How to cite a Cornerstone Economics working paper
+Each paper has a stable DOI from first release. Cite the DOI, not a URL.
+:::
+
+## Recommended format
+
+Use the version DOI when citing a specific result, and the concept DOI when citing the paper as a body of work that may be revised. Both resolve at Zenodo. Example:
+
+> de Kort, R. (2026). *Curaçao at the World Cup: what the FIFA ranking does not measure* (Cornerstone Economics Working Paper No. WP-2026-01). Cornerstone Economics. https://doi.org/10.5281/zenodo.XXXXXXX
+
+## Machine-readable citations
+
+Each paper repository ships a `CITATION.cff` file that GitHub renders into a "Cite this repository" widget and that reference managers can import directly. BibTeX, RIS, and CSL-JSON are also linked from each paper's entry on the [home page](index.qmd).
+
+## Permanent archive
+
+Papers are deposited at the [Cornerstone Economics Zenodo community](https://zenodo.org/communities/cornerstone-economics) on every tagged release. Zenodo provides preservation, DOI minting, and ORCID integration. The papers stay accessible even if Cornerstone Economics ever changes hosting or domain.
